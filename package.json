@@ -1,0 +1,27 @@
+{
+    "name": "synthetic_mind",
+    "version": "1.0.0",
+    "description": "bot script for screeps.com",
+    "main": "main.js",
+    "scripts": {
+        "push to main": "grunt screeps --target=main",
+        "push to test": "grunt screeps --target=test",
+        "push to ptr test": "grunt screeps --ptr=true --target=test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TheDayAfterNationalDay/SyntheticMind.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@types/node": "^16.11.11",
+        "@types/screeps": "^3.2.3",
+        "grunt-screeps": "^1.5.0"
+    },
+    "devDependencies": {
+        "grunt": "^1.4.1",
+        "grunt-contrib-jshint": "^3.0.0"
+    }
+}

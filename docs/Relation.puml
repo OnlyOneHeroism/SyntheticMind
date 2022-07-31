@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class RoomsManager
+class RoomManager
+class SpawnManager
+class SourceManager
+class CreepManager
+
+RoomsManager ..> RoomManager : run()
+
+RoomManager ..> SpawnManager : run(RoomMissionManager)
+RoomManager ..> CreepManager : run(RoomMissionManager)
+
+SpawnManager ...> RoomMissionManager : hasSpawnMission() \n getSpawnMission() \n finishFirstSpawnMission() \n hasStructureMission(StructureMission) \n  addStructureMission(StructureMission)
+
+CreepManager ...> RoomMissionManager : getStructureMission(MissionType) \n reserveStructureMission(StructureMission) \n releaseStructureMission(StructureMission)
+
+
+@enduml

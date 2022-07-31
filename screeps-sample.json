@@ -1,0 +1,15 @@
+{
+    "main": {
+        "email": "your email",
+        "token": "your token",
+        "branch": "main"
+    },
+
+    "test": {
+        "email": "your email",
+        "token": "your token",
+        "branch": "test"
+    },
+
+    "ptr_token": "your token for ptr, which is set separately"
+}
