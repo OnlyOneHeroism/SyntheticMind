@@ -21,24 +21,24 @@ const sources = [
 const e8s4 = {
     roomName: "E8S4",
     sources: sources,
-    spawnNames: ["E42S45_Spawn1", "Spawn1"],
+    spawnNames: ["E8S4_Spawn1", "Spawn1"],
     creeps: [
         {
-            name: "E42S45_harvester1",
+            name: "E8S4_harvester1",
             body: [WORK, CARRY, MOVE],
             missions: [
                 [Mission.MINING, sources[0].id]
             ]
         },
         {
-            name: "E42S45_harvester2",
+            name: "E8S4_harvester2",
             body: [WORK, CARRY, MOVE],
             missions: [
                 [Mission.MINING, sources[1].id]
             ]
         },
         {
-            name: "E42S45_worker",
+            name: "E8S4_worker",
             body: [WORK, CARRY, MOVE],
             missions: [
                 [Mission.BUILDING],
@@ -47,7 +47,7 @@ const e8s4 = {
             ]
         },
         {
-            name: "E42S45_transporter",
+            name: "E8S4_transporter",
             body: [CARRY, MOVE],
             missions: [
                 [Mission.WITHDRAWAL],
@@ -55,7 +55,7 @@ const e8s4 = {
             ]
         },
         {
-            name: "E42S45_upgrader1",
+            name: "E8S4_upgrader1",
             body: [WORK, CARRY, MOVE],
             missions: [
                 [Mission.UPGRADE_CONTROLLER]
@@ -64,4 +64,4 @@ const e8s4 = {
     ]
 };
 
-module.exports = e42s45;
+module.exports = e8s4;
